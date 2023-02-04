@@ -2,10 +2,10 @@
     "name": "project-init",
     "version": "1.0.0",
     "description": "Creates boilerplates for Typescript projects.",
-    "main": "dist/main.bundle.js",
+    "main": "./dist/main.bundle.js",
     "author": "jockep",
     "license": "MIT",
-    "bin": "bin/main.bundle.js",
+    "bin": "./bin/main.bundle.js",
     "devDependencies": {
         "@types/node": "^18.11.18",
         "esbuild": "^0.17.5",
@@ -18,6 +18,6 @@
         "chalk": "4.1.2"
     },
     "scripts": {
-        "build": "esbuild src/main.ts --bundle --outfile=bin/main.bundle.js --platform=node"
+        "build": "esbuild ./src/main.ts --bundle --outfile=./bin/main.bundle.js --platform=node"
     }
 }

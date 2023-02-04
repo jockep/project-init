@@ -60,7 +60,7 @@ async function createPackageJson() {
     if (bundle === '' || bundle === 'y' || bundle === 'Y') {
         await addNPMPackage('esbuild', devDependencies);
         packageJson.main = 'dist/main.bundle.js';
-        scripts.bundle = 'yarn esbuild src/main.ts --bundle --outfile=dist/main.bundle.js --platform=node';
+        scripts.bundle = 'yarn esbuild ./src/main.ts --bundle --outfile=./dist/main.bundle.js --platform=node';
     }
 
     const deps = await console.read('Add dependencies separated by space eg. <typescript axios>: ');
