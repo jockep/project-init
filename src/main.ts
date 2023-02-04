@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 import { default as axios } from 'axios';
 import console, { Console } from 'node:console';
 import { stdin as input, stdout as output } from 'node:process';
