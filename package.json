@@ -5,7 +5,9 @@
     "main": "./dist/main.bundle.js",
     "author": "jockep",
     "license": "MIT",
-    "bin": "./bin/main.bundle.js",
+    "bin": {
+        "project-init": "./bin/main.bundle.js"
+    },
     "devDependencies": {
         "@types/node": "^18.11.18",
         "esbuild": "^0.17.5",
